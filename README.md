@@ -10,3 +10,13 @@ and optimize the developer workflow.
 At runtime, the application is [dockerized](http://www.docker.com) to run within
 a container based on the node.js docker container. The requests are fronted by
 a [nginx](https://www.nginx.com) reverse proxy, also running in a docker container.
+
+## Module structure
+
+As of now, this simple Hello World application does not require any special
+structure.
+
+## API
+
+The application only responds to the endpoint `/hello` with a string.
+  
