@@ -1,0 +1,17 @@
+# package.json
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example application server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@localhost:/var/git/example/server.git"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
