@@ -14,8 +14,8 @@
     "b-js": "babel --source-maps --out-dir build app",
     "build": "npm run clean && npm run b-public && npm run b-views && npm run b-js",
     "clean": "rm -rf build && mkdir build",
-    "vstart": "NODE_ENV=development babel-node app/server.js | tee -a log/app.ndjson.log | bunyan -o short",
-    "vdebug": "NODE_ENV=development babel-node --debug-brk app/server.js | bunyan -o short",
+    "vstart": "NODE_ENV=development babel-watch app/server.js | tee -a log/app.ndjson.log | bunyan -o short",
+    "vdebug": "NODE_ENV=development babel-watch --debug-brk app/server.js | bunyan -o short",
     "start": "NODE_ENV=production node ./build/server.js | tee -a log/app.ndjson.log | bunyan -o short",
     "debug": "NODE_ENV=development node --debug=8011 ./build/server.js | tee -a log/app.ndjson.log | bunyan -o short",
     "test": "jest",
@@ -42,6 +42,7 @@
     "babel-jest": "^13.0.0",
     "babel-plugin-transform-flow-strip-types": "^6.8.0",
     "babel-preset-node5": "^11.1.0",
+    "babel-watch": "^2.0.2",
     "docker": "^1.0.0-alpha.2",
     "eslint": "^3.0.1",
     "jest-cli": "^13.1.1"
