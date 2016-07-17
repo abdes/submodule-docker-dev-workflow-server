@@ -1,0 +1,153 @@
+
+/*
+
+Template Name: App Landy
+Author: MarkUps
+Author URI: http://www.markups.io/
+Description: App Landy - Single page App Landing HTML5 Template.
+Version: 1.0
+Tags: light, white, single page, multipurpose, one page, custom-colors, Bootstrap, responsive, html5, css3
+
+*/
+
+
+/* Table of Content
+==================================================
+#BASIC TYPOGRAPHY
+#HEADER
+#MENU
+#FEATURES
+#HOW IT WORKS
+#PRICING TABLE
+#SCREENSHOT
+#DOWNLOAD
+#TESTIMONIAL
+#PRICING TABLE
+#TESTIMONIAL
+#SUBSCRIBE
+#CONTACT
+#FOOTER
+#ERROR PAGE
+#RESPONSIVE STYLE
+*/
+
+
+/*--------------------*/
+/* BASIC TYPOGRAPHY */
+/*--------------------*/
+
+body,html{
+  	overflow-x:hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	overflow-x: hidden !important;
+	color: #838282;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #2f2f2f;
+}
+
+a:focus{
+	outline: none;
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Cabin', sans-serif;
+}
+
+h2 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+img{
+ border:none;
+}
+
+/*--------------------*/
+/* ERROR PAGE */
+/*--------------------*/
+
+
+#error{
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+
+.error-area {
+  display: inline;
+  float: left;
+  padding: 150px 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+.error-group{
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+
+.error-group h1{
+	color: #979797;
+	font-size: 80px;
+	margin-bottom: 25px;
+}
+
+
+.error-group h1 span {
+  border: 1px solid #cccccc;
+  display: inline-block;
+  margin-left: 5px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+
+.error-group h1 span strong {
+  border: 1px solid #cccccc;
+  display: inline-block;
+  font-weight: normal;
+  padding:  15px 20px;
+}
+
+
+.error-group h2 {
+  color: #979797;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+
+.error-group h2 span{
+	display: block;
+	font-size: 30px;
+}
+
+
+.home-btn a{
+	text-decoration: none;
+	outline: none;
+}

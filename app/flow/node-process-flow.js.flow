@@ -1,0 +1,15 @@
+/**
+ * #node-process.js
+ *
+ * ##Type definitions for the used exports from Node.js process API
+ *
+ *  @flow
+ */
+
+/*eslint-disable no-unused-vars*/
+declare module 'process' {
+
+  declare var version: string
+  declare var env: { [key: string]: string}
+  declare function exit (code: number): void
+}
