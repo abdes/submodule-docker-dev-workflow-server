@@ -2,6 +2,7 @@
   "name": "example",
   "version": "1.0.0",
   "description": "Example application server",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
