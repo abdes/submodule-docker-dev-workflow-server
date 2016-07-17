@@ -11,7 +11,6 @@ import type Response from 'express';
 import path from 'path';
 
 const rest = require('rest');
-const mime = require('rest/interceptor/mime');
 
 /**
  * ## status - are we alive?
@@ -26,14 +25,15 @@ const mime = require('rest/interceptor/mime');
  *
  */
 function status(req: Request, res: Response, next: Middleware) {
+  const mime = require('rest/interceptor/mime');
   var client = rest.wrap(mime);
   client({ 'path': 'http://localhost:8529/_db/example/hello/greet' })
   .then(function(response) {
-    console.log('response: ', response);
     console.log('message: ', response.entity.message);
-    console.log('JSON: ', JSON.parse(response.entity));
-
-    res.send(response.entity);
+    res.send('The winning number is '+response.entity._key+': '+response.entity.message);
+  })
+  .catch(function(cause) {
+    console.log(cause);
   });
   //res.send({'status': 'ok'});
 }
