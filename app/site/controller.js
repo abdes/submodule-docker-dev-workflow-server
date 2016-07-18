@@ -27,7 +27,7 @@ const rest = require('rest');
 function status(req: Request, res: Response, next: Middleware) {
   const mime = require('rest/interceptor/mime');
   var client = rest.wrap(mime);
-  client({ 'path': 'http://localhost:8529/_db/example/hello/greet' })
+  client({ 'path': 'http://arangodb:8529/_db/example/hello/greet' })
   .then(function(response) {
     console.log('message: ', response.entity.message);
     res.send('The winning number is '+response.entity._key+': '+response.entity.message);
